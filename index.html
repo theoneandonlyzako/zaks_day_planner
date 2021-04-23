@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -30,9 +30,109 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+
+      <!-- 9:00am -->
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg span-0">&nbsp;&nbsp;9:00am</span>
+        </div>
+        <input type="text" id = "0" name="9am-todo" class="form-control HourForm" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <div class="input-group-append">
+          <button class="btn btn-outline-danger" type="button" id="saveToDo-0">Save</button>
+        </div>
+      </div>
+
+      <!-- 10:00am -->
+      <div class="input-group input-group-lg" id = "10 AM">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg span-1">10:00am</span>
+        </div>
+        <input type="text" class="form-control HourForm" id="1" name="10am-todo" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <div class="input-group-append">
+          <button class="btn btn-outline-danger" type="button" id="saveToDo-1">Save</button>
+        </div>
+      </div>
+
+      <!-- 11:00am -->
+      <div class="input-group input-group-lg hourText" id = "11 AM">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg span-2">11:00am</span>
+        </div>
+        <input type="text" class="form-control HourForm" id = "2" name="11am-todo" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <div class="input-group-append">
+          <button class="btn btn-outline-danger" type="button" id="saveToDo-2">Save</button>
+        </div>
+      </div>
+
+      <!-- 12:00pm -->
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg span-3">12:00pm</span>
+        </div>
+        <input type="text" class="form-control HourForm" id = "3" name="12pm-todo" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <div class="input-group-append">
+          <button class="btn btn-outline-danger" type="button" id="saveToDo-3">Save</button>
+        </div>
+      </div>
+
+      <!-- 1:00pm -->
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg span-4">&nbsp;&nbsp;1:00pm</span>
+        </div>
+        <input type="text" class="form-control HourForm" id = "4" name="1pm-todo" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <div class="input-group-append">
+          <button class="btn btn-outline-danger" type="button" id="saveToDo-4">Save</button>
+        </div>
+      </div>
+   
+      <!-- 2:00pm -->
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg span-5">&nbsp;&nbsp;2:00pm</span>
+        </div>
+        <input type="text" class="form-control HourForm" id = "5" name="2pm-todo" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <div class="input-group-append">
+          <button class="btn btn-outline-danger" type="button" id="saveToDo-5">Save</button>
+        </div>
+      </div>
+
+      <!-- 3:00pm -->
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg span-6">&nbsp;&nbsp;3:00pm</span>
+        </div>
+        <input type="text" class="form-control HourForm" id = "6" name="3pm-todo" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <div class="input-group-append">
+          <button class="btn btn-outline-danger" type="button" id="saveToDo-6">Save</button>
+        </div>
+      </div>
+
+      <!-- 4:00pm -->
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg span-7">&nbsp;&nbsp;4:00pm</span>
+        </div>
+        <input type="text" class="form-control HourForm" id = "7" name="4pm-todo" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <div class="input-group-append">
+          <button class="btn btn-outline-danger" type="button" id="saveToDo-7">Save</button>
+        </div>
+      </div>
+
+      <!-- 5:00pm -->
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg span-8">&nbsp;&nbsp;5:00pm</span>
+        </div>
+        <input type="text" class="form-control HourForm" id = "8" name="5pm-todo" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <div class="input-group-append">
+          <button class="btn btn-outline-danger" type="button" id="saveToDo-8">Save</button>
+        </div>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
