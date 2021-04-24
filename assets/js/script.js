@@ -6,14 +6,13 @@
     // Refreshes page every 1 second to display time in Real Time
     setInterval(update, 1000);
       
-
 // debugger;
     
-
     // Saves input text when clicking on save button
     $('#hour .description')
     .val(localStorage.getItem(nine))
 
+    // save text values when save button is clicked
   $("button").on("click", function(){
     // debugger;
           $('input, select, textarea').each(function() {
@@ -23,109 +22,99 @@
            localStorage.setItem(name, value);
       })});
 
+// couldnt get this to work... 
+// document.getElementById("saveToDo-0").addEventListener("click", saveIt)
+// function saveIt() {
+//         // debugger;
+//                var value = $(this).val(), name = $(this).attr('name');
+//                localStorage[name] = value;
+//                console.log(name, value);   
+//                localStorage.setItem(name, value);
+//           };
+
+
+    //   runs upon refresh
 $(document).ready(function(){
-    localStorage.getItem("9am-todo", "value");
-    $("input, select, textarea") = function() {
-        var value = $(this).val(), name = $(this).attr('name');
-        localStorage[name] = value;
-        console.log(name, value);  
-    }
-    
+    var something = localStorage.getItem("9am-todo", "value");
+    var value = $(this).val(), name = $(this).attr('name');
+    localStorage[name] = value;
+    console.log(something);   
+    $("#nine").val(something);
+
+    var something = localStorage.getItem("10am-todo", "value");
+    var value = $(this).val(), name = $(this).attr('name');
+    localStorage[name] = value;
+    console.log(something);   
+    $("#ten").val(something);
+
+    var something = localStorage.getItem("11am-todo", "value");
+    var value = $(this).val(), name = $(this).attr('name');
+    localStorage[name] = value;
+    console.log(something);   
+    $("#eleven").val(something);
+
+    var something = localStorage.getItem("12pm-todo", "value");
+    var value = $(this).val(), name = $(this).attr('name');
+    localStorage[name] = value;
+    console.log(something);   
+    $("#twelve").val(something);
+
+    var something = localStorage.getItem("1pm-todo", "value");
+    var value = $(this).val(), name = $(this).attr('name');
+    localStorage[name] = value;
+    console.log(something);   
+    $("#one").val(something);
+
+    var something = localStorage.getItem("2pm-todo", "value");
+    var value = $(this).val(), name = $(this).attr('name');
+    localStorage[name] = value;
+    console.log(something);   
+    $("#two").val(something);
+
+    var something = localStorage.getItem("3pm-todo", "value");
+    var value = $(this).val(), name = $(this).attr('name');
+    localStorage[name] = value;
+    console.log(something);   
+    $("#three").val(something);
+
+    var something = localStorage.getItem("4pm-todo", "value");
+    var value = $(this).val(), name = $(this).attr('name');
+    localStorage[name] = value;
+    console.log(something);   
+    $("#four").val(something);
+
+    var something = localStorage.getItem("5pm-todo", "value");
+    var value = $(this).val(), name = $(this).attr('name');
+    localStorage[name] = value;
+    console.log(something);   
+    $("#five").val(something);
 });
-      
 
+$("#clear").on("click", function(){
+    // debugger;
+          $('input, select, textarea').each(function() {
+           var value = $(this).val(), name = $(this).attr('name');
+        //    localStorage[name] = value;
+           console.log(name, value);   
+           localStorage.removeItem(name, value);
+      }).then(location.reload())});
 
-
-
-
-    // $("button").on("click", function(){
-    //     localStorage.setItem("value", JSON.stringify(value));
-    // });
-
-    // var saveTasks = function() {
-    //     localStorage.setItem("value", JSON.stringify(value));
-    //   };
-
-
-// $( document ).ready(function() {
-//     console.log(localStorage);
-//     value = JSON.parse(localStorage.getItem("value"));
-//      // loop over object properties
-//   $.each(value, function(list, arr) {
-//     // console.log(list, arr);
-//     // then loop over sub-array
-//     arr.forEach(function(task) {
-//       createTask(task.text, task.date, list);
-//     });
-//   });
-
-// });
-
-// value = JSON.parse(localStorage.getItem("value"));
-
-
-
-//     $("button").on("click", function(){
-//         $("input, select, textarea", function(){
-//             var value = $(this).val();
-//             localStorage.setItem('this', value)
-//         console.log("clicked!"); 
-//     })
-// });
-    
-
-
-    // $("button").on("click", function(){
-    //           $('input, select, textarea', function() {
-    //            var value = $(this).val(),
-    //                name = $(this).attr('name');
-    //            localStorage[name] = value;
-    //            console.log(value);   
-    //       })});
-
-
-
-    //   $("button").on("click", function(){
-    //       $('input, select, textarea').each(function() {
-    //        var value = $(this).val(),
-    //            name = $(this).attr('name');
-    //        localStorage[name] = value;
-    //        console.log(value);   
-    //   })});
-
-// $( document ).ready(function() {
-//     console.log(localStorage);
-//     value = localStorage.getItem("value")
-    //     console.log( "ready!" );
-
-    //     $(localStorage).each(function() {
-        
-        // return(value)
-    // });
-
-// value = JSON.parse(localStorage.getItem("value"));
-
-// var loadTasks = function() {
-    
-    
-    
-  
-//     // if nothing in localStorage, create a new object to track all task status arrays
-//     // if (!value) {
-//     //   value = {
-//     //     toDo: [],
-//     //   };
-//     // }
-  
-//     // loop over object properties
-//     $.each(value, function(list, arr) {
-//       // console.log(list, arr);
-//       // then loop over sub-array
-//       arr.forEach(function(value) {
-//         createvalue(value.text, value.date, list);
-//       });
-//     });
-//   };
-  
-
-// Create an If statement to look thru each timeblock and change colors according to time past
+// function getStylesheet() {
+//     var currentTime = new Date().getHours();
+//     if (0 <= currentTime&&currentTime < 5) {
+//      document.write("<link rel='stylesheet' href='night.css' type='text/css'>");
+//     }
+//     if (5 <= currentTime&&currentTime < 11) {
+//      document.write("<link rel='stylesheet' href='morning.css' type='text/css'>");
+//     }
+//     if (11 <= currentTime&&currentTime < 16) {
+//      document.write("<link rel='stylesheet' href='day.css' type='text/css'>");
+//     }
+//     if (16 <= currentTime&&currentTime < 22) {
+//      document.write("<link rel='stylesheet' href='evening.css' type='text/css'>");
+//     }
+//     if (22 <= currentTime&&currentTime <= 24) {
+//      document.write("<link rel='stylesheet' href='night.css' type='text/css'>");
+//     }
+// };
+// getStylesheet();

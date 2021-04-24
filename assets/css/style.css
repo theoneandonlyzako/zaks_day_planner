@@ -57,15 +57,27 @@ textarea{
   color: white;
 }
 
-.saveBtn {
-  border-left: 1px solid black;
+#clear-all {
+  position: center;
+}
+
+.clear-all {
+  font-size: 23px;
+  float: right;
+  margin-top: 5px;
+}
+
+/* .saveBtn {
+  font-size: 15px;
+  border-left: 1px solid red;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   color: white;
 }
 
-.saveBtn hover {
-  color: red;
+.saveBtn :hover {
+ border: #000000;
+ border-width: 20px;
   font-size: 20px;
   transition: all .3s ease-in-out;
-}
+} */
