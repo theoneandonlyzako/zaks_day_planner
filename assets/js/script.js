@@ -1,10 +1,11 @@
     // current day on page load
     var update = function() {
-        document.getElementById("currentDay")
-        .innerHTML = moment().format('dddd, MMMM Do YYYY, h:mm a');
+        $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm a"));
+        // document.getElementById("currentDay")
+        // .innerHTML = moment().format('dddd, MMMM Do YYYY, h:mm a');
     }
-    // Refreshes page every 1 second to display time in Real Time
-    setInterval(update, 1000);
+    // Refreshes page every .1 second to display time in Real Time
+    setInterval(update, 100);
       
 // debugger;
     
@@ -36,55 +37,55 @@
     //   runs upon refresh
 $(document).ready(function(){
     var something = localStorage.getItem("9am-todo", "value");
-    var value = $(this).val(), name = $(this).attr('name');
+    var value = $(this).val().trim(), name = $(this).attr('name');
     localStorage[name] = value;
     console.log(something);   
     $("#nine").val(something);
 
     var something = localStorage.getItem("10am-todo", "value");
-    var value = $(this).val(), name = $(this).attr('name');
+    var value = $(this).val().trim(), name = $(this).attr('name');
     localStorage[name] = value;
     console.log(something);   
     $("#ten").val(something);
 
     var something = localStorage.getItem("11am-todo", "value");
-    var value = $(this).val(), name = $(this).attr('name');
+    var value = $(this).val().trim(), name = $(this).attr('name');
     localStorage[name] = value;
     console.log(something);   
     $("#eleven").val(something);
 
     var something = localStorage.getItem("12pm-todo", "value");
-    var value = $(this).val(), name = $(this).attr('name');
+    var value = $(this).val().trim(), name = $(this).attr('name');
     localStorage[name] = value;
     console.log(something);   
     $("#twelve").val(something);
 
     var something = localStorage.getItem("1pm-todo", "value");
-    var value = $(this).val(), name = $(this).attr('name');
+    var value = $(this).val().trim(), name = $(this).attr('name');
     localStorage[name] = value;
     console.log(something);   
     $("#one").val(something);
 
     var something = localStorage.getItem("2pm-todo", "value");
-    var value = $(this).val(), name = $(this).attr('name');
+    var value = $(this).val().trim(), name = $(this).attr('name');
     localStorage[name] = value;
     console.log(something);   
     $("#two").val(something);
 
     var something = localStorage.getItem("3pm-todo", "value");
-    var value = $(this).val(), name = $(this).attr('name');
+    var value = $(this).val().trim(), name = $(this).attr('name');
     localStorage[name] = value;
     console.log(something);   
     $("#three").val(something);
 
     var something = localStorage.getItem("4pm-todo", "value");
-    var value = $(this).val(), name = $(this).attr('name');
+    var value = $(this).val().trim(), name = $(this).attr('name');
     localStorage[name] = value;
     console.log(something);   
     $("#four").val(something);
 
     var something = localStorage.getItem("5pm-todo", "value");
-    var value = $(this).val(), name = $(this).attr('name');
+    var value = $(this).val().trim(), name = $(this).attr('name');
     localStorage[name] = value;
     console.log(something);   
     $("#five").val(something);
