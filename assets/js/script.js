@@ -1,26 +1,38 @@
     // current day on page load
     var update = function() {
         document.getElementById("currentDay")
-        .innerHTML = moment().format('dddd, MMMM Do YYYY, h:mm:ss a');
+        .innerHTML = moment().format('dddd, MMMM Do YYYY, h:mm a');
     }
     // Refreshes page every 1 second to display time in Real Time
     setInterval(update, 1000);
       
 
 // debugger;
-
+    
 
     // Saves input text when clicking on save button
+    $('#hour .description')
+    .val(localStorage.getItem(nine))
+
   $("button").on("click", function(){
     // debugger;
           $('input, select, textarea').each(function() {
            var value = $(this).val(), name = $(this).attr('name');
            localStorage[name] = value;
            console.log(name, value);   
+           localStorage.setItem(name, value);
       })});
 
-
-
+$(document).ready(function(){
+    localStorage.getItem("9am-todo", "value");
+    $("input, select, textarea") = function() {
+        var value = $(this).val(), name = $(this).attr('name');
+        localStorage[name] = value;
+        console.log(name, value);  
+    }
+    
+});
+      
 
 
 
