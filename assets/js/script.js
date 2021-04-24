@@ -90,6 +90,7 @@ $(document).ready(function(){
     $("#five").val(something);
 });
 
+// Clears page when trash button is clicked
 $("#clear").on("click", function(){
     // debugger;
           $('input, select, textarea').each(function() {
