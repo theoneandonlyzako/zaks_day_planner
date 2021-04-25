@@ -11,11 +11,14 @@ Created a calendar application that allows the user to save events for each hour
 - Whiteboarded my plans while studying many tutorial videos and following along to use the code I couldnt think of myself </br>
 - Researched how to add the current day using jQuery and added the simple line of code to pull from the local machines date/time and display in the header field</br>
 - Built the timline rows in the main body, hardcoding them within the HTML file for jQuery to use</br>
-- started by </br>
+- Added function to change rows background color based off TOD using the existing css </br>
+- Added additional css to style the page for less eye strain </br>
+- added function to refresh the page every 10 mins to assure the row colors are following as expected </br>
+- Added a clear button to clear full page when needed </br>
 
 
 </br>
 
-- Git Repo - https://github.com/theoneandonlyzako/zaks_coding-quiz</br>
-- Direct link - https://theoneandonlyzako.github.io/zaks_coding-quiz/</br></br>
+- Git Repo - https://github.com/theoneandonlyzako/zaks_day_planner</br>
+- Direct link - https://theoneandonlyzako.github.io/zaks_day_planner/</br></br>
 ![img](assets/site.png)
