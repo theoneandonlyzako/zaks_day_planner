@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: #908e8e;
 }
 
 textarea{
@@ -13,12 +14,19 @@ textarea{
   padding: 10px;
 }
 
+.input-group {
+  margin: 2px;
+}
+
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: rgb(68, 68, 68);
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 5px solid black;
+}
+h1, p {
+color: seashell;
 }
 
 .description{
@@ -43,17 +51,18 @@ textarea{
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #b9b9b9;
   color: white;
+  text-decoration: line-through;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #e32920;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #187c18;
   color: white;
 }
 
@@ -62,7 +71,7 @@ textarea{
 }
 
 .clear-all {
-  font-size: 23px;
+  font-size: 22px;
   float: right;
   margin-top: 5px;
 }

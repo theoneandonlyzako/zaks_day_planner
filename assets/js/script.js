@@ -24,7 +24,8 @@
            localStorage[name] = value;
            console.log(name, value);   
            localStorage.setItem(name, value);
-      })});
+      })
+    });
 
 // couldnt get this to work... 
 // document.getElementById("saveToDo-0").addEventListener("click", saveIt)
@@ -179,7 +180,7 @@ function getStylesheet() {
     if (currentTime < 1500) {
         var element = document.getElementById("three");
         element.classList.add("future");
-    } else if (currentTime < 1559) {
+    } else if (currentTime <= 1559) {
         var element = document.getElementById("three");
         element.classList.add("present");
     } else if (currentTime > 1559) {
@@ -187,10 +188,10 @@ function getStylesheet() {
         element.classList.add("past");
     } 
        // 4:00pm
-       if (currentTime > 1700) {
+       if (currentTime < 1600) {
         var element = document.getElementById("four");
         element.classList.add("future");
-    } else if (currentTime <= 1659 || currentTime >= 1559) {
+    } else if (currentTime <= 1659) {
         var element = document.getElementById("four");
         element.classList.add("present");
     } else if (currentTime > 1659) {
@@ -198,10 +199,10 @@ function getStylesheet() {
         element.classList.add("past");
     } 
            // 5:00pm
-        if (currentTime <= 1759) {
+        if (currentTime < 1759) {
         var element = document.getElementById("five");
         element.classList.add("future");
-    } else if (currentTime < 1800) {
+    } else if (currentTime <= 1759) {
         var element = document.getElementById("five");
         element.classList.add("present");
     } else if (currentTime > 1759) {
@@ -210,6 +211,11 @@ function getStylesheet() {
     } 
 };
  getStylesheet()
+
+ setInterval(function() {
+    window.location.reload();
+  }, 600000); 
+
 
 // function getStylesheet() {
 //     var currentTime = new Date().getHours();
